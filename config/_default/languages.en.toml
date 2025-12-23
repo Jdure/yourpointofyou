@@ -1,0 +1,30 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+# title = "Your Point of You"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  # description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+name = "Your Story. Your Perspective."
+#   email = "pointofyoubusiness@gmail.com"
+#   image = "img/blowfish_logo.png"
+#   imageQuality = 96
+headline = "Photography that reflects who you truly are"
+#   bio = "A little bit about you"
+#  links = [
+#    { email = "mailto:hello@your_domain.com" },
+#    { link = "https://www.yourpointofyou.ca" },
+#    { instagram = "https://instagram.com/username"}
+#  ]
+
+[params.homepage]
