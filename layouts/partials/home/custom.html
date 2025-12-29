@@ -86,9 +86,14 @@
                 <div
                     class="absolute inset-0 bg-gradient-to-t from-primary-400 to-transparent mix-blend-overlay dark:from-neutral-800"
                 ></div>
-                <div class="relative w-full cursor-pointer">
+                <div class="relative w-full cursor-pointer group">
                     <h2 class="text-2xl uppercase pt-4 pb-2">{{ .title }}</h2>
-                    <p class="text-xl invisible hover:visible">
+                    <!--TODO:
+                    - [] Make the title clickable to navigate to the page
+                    - [] Add a hover effect to the description
+                    - [] Add a transition effect to the card
+                    -->
+                    <p class="text-xl invisible group-hover:visible">
                         {{ .description }}
                     </p>
                 </div>
