@@ -1,0 +1,24 @@
+[
+  {
+    "id": "about",
+    "title": "About",
+    "description": "Learn more about my journey, style, and passion for photography",
+    "image": "https://picsum.photos/id/319/600/400",
+    "link": "/about/"
+  },
+
+  {
+    "id": "services",
+    "title": "Services",
+    "description": "Explore professional photography services tailored to your needs",
+    "image": "https://picsum.photos/id/531/600/400",
+    "link": "/services/"
+  },
+  {
+    "id": "process",
+    "title": "Procces and FAQ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquet",
+    "image": "https://picsum.photos/id/668/600/400",
+    "link": "/process/"
+  }
+]

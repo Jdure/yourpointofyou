@@ -1,148 +1,106 @@
-<!-- <section class="flex flex-col"> -->
-<!-- HERO Banner -->
-<!-- <div class="fixed inset-x-0 top-0 -z-10">
-    <img
-      id="background-image"
-      class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover"
-      src="/img/background.png"
-      alt=""
-    />
-    <div
-      class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"
-    ></div>
-    <div
-      class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-neutral-100 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800"
-    ></div>
-  </div>
-  <div class="flex flex-col text-center content-end justify-center"></div>
-  <div>Test</div> -->
-<!-- </section> -->
-
 {{/* 1. Hero section */}}
-<!-- <div id="hero" class="home-hero">
-<div class="fixed inset-0 h-33">
-  <img
-    id="background-image"
-    class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover"
-    src="/img/background.png"
-    alt=""
-  />
-  <div
-      class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"
-    ></div>
-    <div
-      class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-neutral-100 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800"
-    ></div>
-  </div>
-</div>
-  <div class="flex flex-col text-center absolute inset-x-0 bottom-0">
-    <h1 class="text-4xl">Your Story. Your Perspective.</h1>
-    <p class="text-xl">Photography that reflects who you truly are</p>
-    <a href="/about/" role="button" class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700">Learn More</a>
-  </div>
-</div> -->
 
-{{/* 2. Quote + CTA */}}
-<!-- <div id="quote" class="home-section relative bg-primary-500 mt-16">
-  <blockquote class="text-2xl italic">“Photography is an art…”</blockquote>
-</div> -->
-
-{{/* 3. Services */}}
-<!-- <div id="services" class="home-section">
-  <div class="service-card">…</div>
-  <div class="service-card">…</div>
-  <div class="service-card">…</div>
-</div> -->
-
-{{/* 4. Featured photos */}}
-<!-- <div id="featured" class="home-section">…</div> -->
-
-{{/* 5. Socials */}}
-<!-- <div id="socials" class="home-section--small">…</div> -->
-
-<div class="min-h-screen flex flex-col">
-  <section
-    class="flex-1 flex items-center justify-center relative min-h-screen"
-  >
-    <div class="sticky top-0 h-full">
-      <img
-        id="background-image"
-        class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover object-center"
-        src="/img/background.png"
-        alt=""
-      />
-      <div
-        class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"
-      ></div>
-      <div
-        class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-neutral-100 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800 justify-center"
-      ></div>
-    </div>
-    <div
-      class="flex flex-col space-y-2 text-center absolute inset-x-0 bottom-0"
+<div class="max-h-screen flex flex-col">
+    <section
+        class="flex-1 flex items-center justify-center relative min-h-screen"
     >
-      <h1 class="text-4xl">Your Story. Your Perspective.</h1>
-      <p class="text-xl">Photography that reflects who you truly are</p>
-      <a
-        href="/about/"
-        role="button"
-        class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
-        >Learn More</a
-      >
-    </div>
-  </section>
-
-  <section class="flex flex-1 relative min-h-screen">
-    <div class="h-screen flex flex-col items-start justify-center">
-      <!-- <p class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
-        Welcome to the Page
-      </p>
-      <p class="text-lg">
-        This is the main content that appears below the hero. As you scroll, the
-        hero stays fixed until it naturally scrolls out of view.
-      </p> -->
-      <!-- More content -->
-      <blockquote class="relative">
-        <svg
-          class="static -top-6 -start-8 size-16 text-primary-400 dark:text-neutral-700"
-          width="32"
-          height="32"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-
-        <div class="relative z-10">
-          <p
-            class="text-3xl text-neutral-800 md:text-4xl md:leading-normal dark:text-white"
-          >
-            <em>
-              Magna nulla commodo incididunt aliqua dolor Lorem duis adipisicing
-              culpa irure Lorem consequat esse. <br />
-              - clear and detailed.
-            </em>
-          </p>
+        <div class="sticky top-0 h-full w-full">
+            <img
+                id="background-image"
+                class="nozoom m-0 h-screen w-full object-cover object-center"
+                src="/img/background.png"
+                alt=""
+            />
+            <div
+                class="from-neutral absolute inset-0 h-screen bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"
+            ></div>
+            <div
+                class="from-neutral absolute inset-0 h-screen bg-gradient-to-t to-neutral-100 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800 justify-center"
+            ></div>
         </div>
-      </blockquote>
-    </div>
-  </section>
+        <div
+            class="absolute bottom-0 inset-x-0 mb-20 flex flex-col items-center space-y-2"
+        >
+            <h1 class="text-4xl">Your Story Your Perspective.</h1>
+            <p class="text-xl">Photography that reflects who you truly are</p>
+            <a
+                href="/about/"
+                role="button"
+                class="rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+            >
+                Learn More
+            </a>
+        </div>
+    </section>
 
-  <!-- Section 3. Squares of other pages -->
+    <section class="flex flex-1 relative min-h-screen">
+        <div class="h-screen flex flex-col items-start justify-center">
+            <blockquote class="relative">
+                <svg
+                    class="static -top-6 -start-8 size-16 text-primary-400 dark:text-neutral-700"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
 
-  <section class="flex-1 flex items-center justify-center h-screen">
-    ...
-  </section>
-  <!-- Section 4. Call to action “let’s connect” or “book an appointment” -->
+                <div class="relative z-10">
+                    <p
+                        class="text-2xl text-neutral-800 md:text-4xl md:leading-normal dark:text-white"
+                    >
+                        <em>
+                            Magna nulla commodo incididunt aliqua dolor Lorem
+                            duis adipisicing culpa irure Lorem consequat esse.
+                            <br />
+                            - Willyne P.
+                        </em>
+                    </p>
+                </div>
+            </blockquote>
+        </div>
+    </section>
 
-  <section class="flex-1 flex items-center justify-center h-screen">
-    ...
-  </section>
+    <!-- Section 3. Squares of other pages -->
 
-  <!-- Section 5. End page (social, contact, list of pages …)  -->
+    <section class="flex flex-1 relative min-h-screen">
+        <div class="h-screen w-screen flex flex-col justify-between gap-4">
+            {{ range .Site.Data.pages }}
+            <div
+                class="relative h-full min-w-fit py-16 text-white text-center rounded-lg overflow-hidden"
+            >
+                <img
+                    alt="{{ .title }}"
+                    src="{{ .image}}"
+                    class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary-500 to-primary-100 mix-blend-overlay dark:from-primary-500 dark:to-primary-800 opacity-60"
+                ></div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary-400 to-transparent mix-blend-overlay dark:from-neutral-800"
+                ></div>
+                <div class="relative w-full cursor-pointer">
+                    <h2 class="text-2xl uppercase pt-4 pb-2">{{ .title }}</h2>
+                    <p class="text-xl invisible hover:visible">
+                        {{ .description }}
+                    </p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    <!-- Section 4. Call to action “let’s connect” or “book an appointment” -->
+
+    <section class="flex-1 flex items-center justify-center h-screen">
+        ...
+    </section>
+
+    <!-- Section 5. End page (social, contact, list of pages …)  -->
 </div>

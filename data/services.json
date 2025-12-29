@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Family",
+    "title": "Family Photography",
+    "description": "Timeless and emotional family photography capturing every important moment.",
+    "priceRange": "$2,000 – $4,500",
+    "duration": "6–10 hours",
+    "features": [
+      "Pre-wedding consultation",
+      "High-resolution edited photos",
+      "Online gallery",
+      "Print release"
+    ],
+    "image": "/images/services/wedding.jpg"
+  },
+  {
+    "id": "portrait",
+    "title": "Portrait Photography",
+    "description": "Professional portraits for individuals, couples, and families.",
+    "priceRange": "$300 – $900",
+    "duration": "1–2 hours",
+    "features": [
+      "Studio or outdoor session",
+      "Retouched images",
+      "Multiple outfit changes",
+      "Digital delivery"
+    ],
+    "image": "/images/services/portrait.jpg"
+  },
+  {
+    "id": "commercial",
+    "title": "Commercial Photography",
+    "description": "High-quality imagery for brands, products, and marketing campaigns.",
+    "priceRange": "Custom Quote",
+    "duration": "Half-day or full-day",
+    "features": [
+      "Brand-focused styling",
+      "Product and lifestyle shots",
+      "Commercial usage license",
+      "Post-production included"
+    ],
+    "image": "/images/services/commercial.jpg"
+  },
+  {
+    "id": "event",
+    "title": "Event Photography",
+    "description": "Candid and professional coverage for corporate and private events.",
+    "priceRange": "$150 / hour",
+    "duration": "Hourly",
+    "features": [
+      "On-site coverage",
+      "Fast turnaround",
+      "Online gallery",
+      "Social-media ready images"
+    ],
+    "image": "/images/services/event.jpg"
+  }
+]
