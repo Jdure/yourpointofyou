@@ -76,31 +76,6 @@
   <section class="flex flex-1 relative min-h-screen">
     <div class="h-screen w-screen flex flex-col justify-between gap-4">
       {{ range .Site.Data.pages }}
-      <!-- <div
-        class="relative h-full min-w-fit py-16 text-white text-center rounded-lg overflow-hidden card__content"
-      >
-        <img
-          alt="{{ .title }}"
-          src="{{ .image}}"
-          class="absolute inset-0 w-full h-full object-cover"
-        />
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-primary-500 to-primary-100 mix-blend-overlay dark:from-primary-500 dark:to-primary-800 opacity-60"
-        ></div>
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-primary-400 to-transparent mix-blend-overlay dark:from-neutral-800"
-        ></div>
-        <div class="relative w-full cursor-pointer group">
-          <div class="card__front">
-            <h2 class="text-2xl uppercase pt-4 pb-2">{{ .title }}</h2>
-          </div>
-          <div class="card__back">
-            <p class="text-xl invisible group-hover:visible">
-              {{ .description }}
-            </p>
-          </div>
-        </div>
-      </div> -->
       <div
         class="card relative h-full min-w-fit py-16 rounded-lg overflow-hidden"
       >
@@ -123,9 +98,29 @@
             </div>
 
             <div
-              class="card__back absolute inset-0 flex items-center justify-center is-hidden"
+              class="card__back absolute inset-0 flex flex-col items-center justify-center is-hidden"
             >
-              <p class="text-xl">{{ .description }}</p>
+              <p class="text-xl pb-4">{{ .description }}</p>
+              <a
+                href="{{ .link }}"
+                role="button"
+                class="rounded-md bg-transparent px-2 py-2 text-white !no-underline hover:bg-neutral-50 dark:text-white dark:bg-transparent dark:hover:!bg-primary-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
