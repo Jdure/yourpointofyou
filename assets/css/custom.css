@@ -81,3 +81,11 @@ span {
   opacity: 1;
   transform: translateX(0);
 }
+
+.btn_scale {
+  transition: 0.2s;
+}
+
+.btn_scale:hover {
+  transform: scale(1.25);
+}
