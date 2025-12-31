@@ -59,3 +59,25 @@ span {
 .is-visible {
   opacity: 1;
 }
+
+.link-with-arrow__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+/* Arrow hidden by default */
+.link-with-arrow__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.link-with-arrow__link:hover .link-with-arrow__icon,
+.link-with-arrow__link:focus-visible .link-with-arrow__icon {
+  opacity: 1;
+  transform: translateX(0);
+}
