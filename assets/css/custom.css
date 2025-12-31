@@ -89,3 +89,8 @@ span {
 .btn_scale:hover {
   transform: scale(1.25);
 }
+
+.img_overlay {
+  background-color: rgb(0 0 0 / 0.75);
+  opacity: 0.6;
+}
