@@ -3,6 +3,7 @@
 /resources/_gen/
 /assets/jsconfig.json
 /assets/img/
+/assets/images/
 hugo_stats.json
 
 # Executables (if committed to the repo)
