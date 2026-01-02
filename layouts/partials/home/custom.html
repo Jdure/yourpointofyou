@@ -128,46 +128,56 @@
     <!-- Section 4. Call to action “let’s connect” or “book an appointment” -->
 
     <section
-        class="flex flex-col items-center min-h-screen overflow-hidden px-6"
+        class="flex flex-col items-center min-h-screen min-w-screen overflow-hidden px-6"
     >
-        <div
-            class="flex flex-col text-center h-screen justify-center items-center space-y-2"
-        >
-            <h2 class="text-4xl">CTA Statement</h2>
-            <p class="text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit!
-            </p>
-            <div class="link-with-arrow">
-                <a href="#" class="text-xl capitalize link-with-arrow__link">
-                    book an appointment
+        <div class="flex flex-col text-center h-screen items-center">
+            <div class="flex flex-col">
+                <h2 class="text-4xl">CTA Statement</h2>
+                <p class="text-2xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit!
+                </p>
 
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        class="link-with-arrow__icon"
+                <span class="link-with-arrow">
+                    <a
+                        href="#"
+                        class="text-xl capitalize border rounded-md border-black px-4 py-2 link-with-arrow__link"
                     >
-                        <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                        />
-                    </svg>
-                </a>
+                        book your appointment
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            class="link-with-arrow__icon"
+                        >
+                            <path
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                            />
+                        </svg>
+                    </a>
+                </span>
             </div>
-            <a
-                class="rounded-sm bg-primary-500 px-2 border-black text-white"
-                href="#"
-                >some text</a
-            >
-            <img
-                class="h-56 w-full object-cover sm:h-full rounded-md"
-                src="https://picsum.photos/id/435/600/400"
-                alt="CTA_Image"
-            />
+            <div
+                class="flex object-cover object-center w-screen bg-no-repeat"
+                style="
+                    background-image: url(&quot;https://picsum.photos/id/435/1200/400&quot;);
+                    height: 25%;
+                "
+            ></div>
+            <div class="flex flex-col items-center space-y-2">
+                <h2 class="text-4xl tracking-wider capitalize">
+                    point of you photography
+                </h2>
+                <p class="text-2xl capitalize">
+                    Making you feel seen <br />
+                    Real moments captured through my POV
+                </p>
+            </div>
         </div>
     </section>
 
