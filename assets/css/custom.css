@@ -24,10 +24,10 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-weight: 1 1000;
     font-style: normal;
-    src: url("/static/fonts/AbrilFatface-Regular.ttf");
 }
 
 footer {
@@ -140,8 +140,9 @@ p {
 }
 
 @media (min-width: 640px) {
-    .quote {
-        align-self: center;
+    #quote {
+        font-size: 1.5rem; /* 20px */
+        line-height: 1.75rem;
     }
 
     h1 {

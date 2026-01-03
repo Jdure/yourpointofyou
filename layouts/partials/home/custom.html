@@ -1,5 +1,7 @@
-<div class="max-h-screen max-w-screen-2xl">
-    <section class="grid place-items-center relative min-h-screen">
+<div class="max-h-screen max-w-screen-xl">
+    <section
+        class="flex flex-col place-items-center relative pb-8 sm:pb-12 md:pb-16 lg:pb-20"
+    >
         <div id="background_img" class="sticky inset-0 h-full w-full">
             <img
                 class="nozoom h-screen sm:h-full object-cover object-center"
@@ -21,22 +23,24 @@
         </div>
     </section>
 
-    <section class="max-h-screen min-w-screen px-6 py-4 sm:px-0">
+    <section class="max-w-screen-xl py-8 sm:py-12 md:py-16 lg:py-20">
         <div
-            class="grid grid-cols-1 sm:grid-cols-2 h-screen sm:h-3/4 md:h-9/10 md:w-full md:px-16 lg:h-2/3 lg:content-start lg:px-20 xl:h-3/4 xl:px-32 2xl:h-2/5"
+            class="h-full grid grid-cols-1 gap-y-4 justify-items-center sm:grid-cols-3 sm:gap-x-4"
         >
-            <div
-                class="w-4/5 h-4/5 md:h-full md:w-full self-center justify-self-center"
-            >
+            <!--Hero Image-->
+            <div class="self-start md:pb-16 sm:self-end">
                 <img
                     src="/images/quote.png"
                     width="360"
                     height="640"
-                    class="nozoom rounded-md object-contain object-center shadow-xl"
+                    class="nozoom rounded-md object-contain object-center shadow-xl grayscale-50"
                     alt=""
                 />
             </div>
-            <div class="self-start sm:self-center">
+            <!--Quote-->
+            <div
+                class="self-start pb-16 sm:col-span-2 sm:self-center sm:w-2/3 sm:pr-16 sm:font-light"
+            >
                 <blockquote class="relative">
                     <svg
                         class="static -top-6 -start-8 size-16 text-neutral-300 dark:text-neutral-700"
@@ -53,8 +57,9 @@
                         ></path>
                     </svg>
 
-                    <div class="relative z-10 sm:text-justify">
+                    <div class="relative z-10 text-center sm:text-justify">
                         <p
+                            id="quote"
                             class="text-neutral-800 md:leading-normal dark:text-white"
                         >
                             <em>
@@ -68,22 +73,18 @@
                     </div>
                 </blockquote>
             </div>
-        </div>
-    </section>
-
-    <section class="max-h-screen min-w-screen md:pt-24">
-        <div
-            class="h-screen grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 md:gap-4 sm:h-96 md:h-120 sm:gap-x-1 md:gap-x-2"
-        >
+            <!--Services-->
             {{ range .Site.Data.pages }}
-            <div class="card h-full w-[95%] mx-auto sm:w-full overflow-hidden">
+            <div
+                class="card h-64 sm:aspect-4/5 w-[95%] mx-auto sm:w-full md:h-96 overflow-hidden"
+            >
                 <div
                     class="card__content text-white text-center cursor-pointer"
                 >
                     <img
                         alt="{{ .title }}"
                         src="{{ .image }}"
-                        class="absolute inset-0 w-full h-full object-cover"
+                        class="absolute inset-0 w-full h-full object-cover rounded-md"
                     />
 
                     <div class="bg-black/75 opacity-60 absolute inset-0"></div>
@@ -102,7 +103,7 @@
                             <a
                                 href="{{ .link }}"
                                 role="button"
-                                class="btn_scale rounded-md bg-transparent px-2 py-2 text-white !no-underline hover:bg-neutral-50 dark:text-white dark:bg-transparent dark:hover:!bg-primary-500"
+                                class="btn_scale rounded-md bg-transparent px-2 py-2 text-white no-underline! hover:bg-neutral-50 dark:text-white dark:bg-transparent dark:hover:bg-primary-500!"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -128,10 +129,12 @@
     </section>
     <!-- Section 4. Call to action “let’s connect” or “book an appointment” -->
 
-    <section class="max-h-screen min-w-screen overflow-hidden">
-        <div class="grid grid-cols-1 h-screen w-full">
+    <section
+        class="max-w-screen-2xl overflow-hidden py-8 sm:py-12 md:py-16 lg:py-20"
+    >
+        <div class="grid grid-cols-1 gap-8 sm:gap-16 md:gap-24 h-full w-full">
             <div
-                class="flex flex-col gap-4 justify-self-center self-center items-center sm:text-justify"
+                class="flex flex-col gap-2 sm:gap-4 justify-self-center items-center sm:text-justify"
             >
                 <h2 class="">CTA Statement</h2>
                 <p class="">
@@ -164,16 +167,38 @@
                 </span>
             </div>
             <div
-                class="bg-[url(https://picsum.photos/id/435/1200/400)] object-cover object-center w-screen h-full bg-no-repeat"
+                class="bg-[url(https://picsum.photos/id/435/1200/400)] object-cover object-center w-screen h-96 bg-no-repeat"
             ></div>
             <div
-                class="flex flex-col gap-4 justify-center items-center text-center"
+                class="flex flex-col gap-2 justify-center items-center text-center"
             >
-                <h2 class="tracking-wider capitalize">
-                    point of you photography
-                </h2>
-                <p class="capitalize">Making you feel seen</p>
-                <p class="capitalize">Real moments captured through my POV</p>
+                <img
+                    src="/images/logo-white.png"
+                    alt="Point Of You Logo"
+                    class="h-24 justify-self-center self-center nozoom hidden dark:block"
+                />
+                <img
+                    src="/images/logo-black.png"
+                    alt="Point Of You Logo"
+                    class="h-24 justify-self-center self-center nozoom block dark:hidden"
+                />
+                <p class="text-sm">
+                    Ottawa - Gatineau <br />
+                    Photographer
+                </p>
+                <div class="flex flex-row">
+                    <span class="[&>svg]:h-6 [&>svg]:w-6">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            />
+                        </svg>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
