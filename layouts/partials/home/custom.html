@@ -1,4 +1,4 @@
-<div class="max-h-screen max-w-screen-2xl flex flex-col">
+<div class="max-h-screen max-w-screen-xl flex flex-col">
     <section
         class="flex-1 flex items-center justify-center relative min-h-screen"
     >
@@ -16,25 +16,23 @@
             ></div>
         </div>
         <div class="flex flex-col items-start space-y-2 hero_content px-6">
-            <h1 class="text-4xl">Your Story Your Perspective.</h1>
+            <h1 class="text-4xl">Your Story Your Perspective</h1>
             <p class="text-xl">Photography that reflects who you truly are</p>
         </div>
     </section>
 
-    <section class="flex flex-1 flex-col relative min-h-screen px-6">
-        <div
-            class="h-screen flex flex-col flex-nowrap items-center justify-center sm:flex-row"
-        >
-            <div class="flex-none w-16 h-64 sm:w-1/2">
+    <section class="min-h-screen min-w-screen px-6 py-4 sm:px-0">
+        <div class="wrapper_quote">
+            <div class="w-16 h-64">
                 <img
                     src="/images/quote.png"
                     width="360"
                     height="640"
-                    class="nozoom rounded-md shadow-xl object-contain object-center"
+                    class="nozoom shadow rounded-md object-contain object-center"
                     alt=""
                 />
             </div>
-            <div class="flex flex-1 sm:w-1/2 sm:text-nowrap">
+            <div class="quote">
                 <blockquote class="relative">
                     <svg
                         class="static -top-6 -start-8 size-16 text-neutral-400 dark:text-neutral-700"
@@ -70,7 +68,7 @@
     </section>
 
     <section class="min-h-screen min-w-screen">
-        <div class="wrapper">
+        <div class="wrapper_services">
             {{ range .Site.Data.pages }}
             <div class="card h-full w-[95%] overflow-hidden">
                 <div
@@ -133,7 +131,7 @@
             class="grid grid-flow-col h-screen w-full items-center justify-items-center text-center"
         >
             <div class="flex flex-col gap-4">
-                <h2 class="text-2xl sm:text-4xl">CTA Statement</h2>
+                <h2 class="text-2xl sm:text-6xl">CTA Statement</h2>
                 <p class="text-xl sm:text-2xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit!
                 </p>
