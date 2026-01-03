@@ -1,0 +1,24 @@
+{
+  "name": "yourpointofyou",
+  "version": "1.0.0",
+  "description": "Your Point of You Photography website",
+  "scripts": {
+    "predev": "cd themes/blowfish && npm install",
+    "dev": "concurrently -n \"TW,HUGO\" -c \"cyan,green\" \"npm run dev:tw\" \"npm run dev:hugo\"",
+    "dev:tw": "NODE_ENV=development ./themes/blowfish/node_modules/@tailwindcss/cli/dist/index.mjs -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+    "dev:hugo": "hugo server -D --disableFastRender",
+    "build": "npm run build:tw && npm run build:hugo",
+    "build:tw": "NODE_ENV=production ./themes/blowfish/node_modules/@tailwindcss/cli/dist/index.mjs -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
+    "build:hugo": "hugo --minify",
+    "preview": "npm run build && hugo server",
+    "clean": "rm -rf public resources .hugo_build.lock",
+    "theme:update": "cd themes/blowfish && git pull",
+    "theme:install": "cd themes/blowfish && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true
+}

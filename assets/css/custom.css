@@ -30,6 +30,10 @@ h4 {
     src: url("/static/fonts/AbrilFatface-Regular.ttf");
 }
 
+footer {
+    visibility: hidden;
+}
+
 /* Global heading sizes */
 h1 {
     font-size: 2.25rem; /* 36px */
@@ -55,27 +59,6 @@ h4 {
 p {
     font-size: 1rem; /* 16px */
     line-height: 1.625rem;
-}
-
-.quote {
-    align-self: flex-start;
-}
-
-.wrapper_quote {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    height: 100vh;
-}
-
-.wrapper_services {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    height: 100vh;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .card {
@@ -154,90 +137,6 @@ p {
 
 .btn_scale:hover {
     transform: scale(1.25);
-}
-
-.img_overlay {
-    background-color: rgb(0 0 0 / 0.75);
-    opacity: 0.6;
-}
-
-.hero_content {
-    position: absolute;
-    bottom: 25%;
-}
-
-@media (min-width: 640px) {
-    .wrapper_services {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 0.75rem;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        height: 24rem;
-        column-gap: 0.25rem;
-    }
-}
-
-@media (min-width: 853px) {
-    .wrapper_services {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        height: 36rem;
-        column-gap: 0.5rem;
-    }
-}
-
-@media (min-width: 640px) {
-    .wrapper_quote {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        height: 60vh;
-        align-content: start;
-    }
-}
-
-@media (min-width: 853px) {
-    .wrapper_quote {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        height: 90vh;
-        align-content: center;
-        width: 100%;
-        padding-left: 4rem; /* Add horizontal padding */
-        padding-right: 4rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .wrapper_quote {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        height: 50vh;
-        align-content: start;
-        width: 100%;
-        padding-left: 5rem; /* Increase horizontal padding */
-        padding-right: 5rem;
-    }
-}
-
-@media (min-width: 1280px) {
-    .wrapper_quote {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        height: 70vh;
-        align-content: start;
-        width: 100%;
-        padding-left: 8rem; /* Increase horizontal padding */
-        padding-right: 8rem;
-    }
-}
-
-@media (min-width: 1536px) {
-    .wrapper_quote {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        height: 40vh;
-        align-content: start;
-        width: 100%;
-        padding-left: 8rem; /* Increase horizontal padding */
-        padding-right: 8rem;
-    }
 }
 
 @media (min-width: 640px) {

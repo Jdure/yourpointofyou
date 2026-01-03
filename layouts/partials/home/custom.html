@@ -1,4 +1,4 @@
-<div class="max-h-screen max-w-screen-xl">
+<div class="max-h-screen max-w-screen-2xl">
     <section class="grid place-items-center relative min-h-screen">
         <div id="background_img" class="sticky inset-0 h-full w-full">
             <img
@@ -7,33 +7,39 @@
                 alt=""
             />
             <div
-                class="from-neutral absolute inset-0 h-screen sm:h-full bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"
+                class="from-neutral absolute inset-0 h-screen sm:h-full bg-linear-to-t to-transparent mix-blend-normal dark:from-neutral-800"
             ></div>
             <div
-                class="from-neutral absolute inset-0 h-screen sm:h-full bg-gradient-to-t to-neutral-800 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800 justify-center"
+                class="from-neutral absolute inset-0 h-screen sm:h-full bg-linear-to-t to-neutral-800 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800 justify-center"
             ></div>
         </div>
-        <div class="flex flex-col items-start space-y-2 hero_content px-6">
+        <div
+            class="flex flex-col items-start space-y-2 absolute bottom-[25%] px-6"
+        >
             <h1 class="">Your Story Your Perspective</h1>
             <p class="">Photography that reflects who you truly are</p>
         </div>
     </section>
 
-    <section class="min-h-screen min-w-screen px-6 py-4 sm:px-0">
-        <div class="wrapper_quote">
-            <div class="w-16 h-64">
+    <section class="max-h-screen min-w-screen px-6 py-4 sm:px-0">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 h-screen sm:h-3/4 md:h-9/10 md:w-full md:px-16 lg:h-2/3 lg:content-start lg:px-20 xl:h-3/4 xl:px-32 2xl:h-2/5"
+        >
+            <div
+                class="w-4/5 h-4/5 md:h-full md:w-full self-center justify-self-center"
+            >
                 <img
                     src="/images/quote.png"
                     width="360"
                     height="640"
-                    class="nozoom shadow rounded-md object-contain object-center"
+                    class="nozoom rounded-md object-contain object-center shadow-xl"
                     alt=""
                 />
             </div>
-            <div class="quote">
+            <div class="self-start sm:self-center">
                 <blockquote class="relative">
                     <svg
-                        class="static -top-6 -start-8 size-16 text-neutral-400 dark:text-neutral-700"
+                        class="static -top-6 -start-8 size-16 text-neutral-300 dark:text-neutral-700"
                         width="32"
                         height="32"
                         viewBox="0 0 16 16"
@@ -47,7 +53,7 @@
                         ></path>
                     </svg>
 
-                    <div class="relative z-10">
+                    <div class="relative z-10 sm:text-justify">
                         <p
                             class="text-neutral-800 md:leading-normal dark:text-white"
                         >
@@ -65,10 +71,12 @@
         </div>
     </section>
 
-    <section class="min-h-screen min-w-screen">
-        <div class="wrapper_services">
+    <section class="max-h-screen min-w-screen md:pt-24">
+        <div
+            class="h-screen grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 md:gap-4 sm:h-96 md:h-120 sm:gap-x-1 md:gap-x-2"
+        >
             {{ range .Site.Data.pages }}
-            <div class="card h-full w-[95%] overflow-hidden">
+            <div class="card h-full w-[95%] mx-auto sm:w-full overflow-hidden">
                 <div
                     class="card__content text-white text-center cursor-pointer"
                 >
@@ -78,7 +86,7 @@
                         class="absolute inset-0 w-full h-full object-cover"
                     />
 
-                    <div class="img_overlay absolute inset-0"></div>
+                    <div class="bg-black/75 opacity-60 absolute inset-0"></div>
 
                     <div class="card__inner relative w-full h-full">
                         <div
@@ -120,11 +128,11 @@
     </section>
     <!-- Section 4. Call to action “let’s connect” or “book an appointment” -->
 
-    <section class="min-h-screen min-w-screen overflow-hidden">
-        <div
-            class="grid grid-flow-col h-screen w-full items-center justify-items-center text-center"
-        >
-            <div class="flex flex-col gap-4">
+    <section class="max-h-screen min-w-screen overflow-hidden">
+        <div class="grid grid-cols-1 h-screen w-full">
+            <div
+                class="flex flex-col gap-4 justify-self-center self-center items-center sm:text-justify"
+            >
                 <h2 class="">CTA Statement</h2>
                 <p class="">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit!
@@ -133,7 +141,7 @@
                 <span class="link-with-arrow">
                     <a
                         href="#"
-                        class="capitalize border rounded-md border-black px-4 py-2 link-with-arrow__link"
+                        class="capitalize font-semibold border rounded-md border-neutral-800 dark:border-secondary-100 px-4 py-2 link-with-arrow__link"
                     >
                         book your appointment
 
@@ -156,19 +164,16 @@
                 </span>
             </div>
             <div
-                class="object-cover object-center w-screen h-full bg-no-repeat"
-                style="
-                    background-image: url(&quot;https://picsum.photos/id/435/1200/400&quot;);
-                "
+                class="bg-[url(https://picsum.photos/id/435/1200/400)] object-cover object-center w-screen h-full bg-no-repeat"
             ></div>
-            <div class="flex flex-col gap-4">
+            <div
+                class="flex flex-col gap-4 justify-center items-center text-center"
+            >
                 <h2 class="tracking-wider capitalize">
                     point of you photography
                 </h2>
-                <p class="capitalize">
-                    Making you feel seen <br />
-                    Real moments captured through my POV
-                </p>
+                <p class="capitalize">Making you feel seen</p>
+                <p class="capitalize">Real moments captured through my POV</p>
             </div>
         </div>
     </section>
