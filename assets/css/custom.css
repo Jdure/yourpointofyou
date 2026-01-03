@@ -57,7 +57,7 @@ h4 {
 
 /* Global paragraph size */
 p {
-    font-size: 1rem; /* 16px */
+    font-size: 1.25rem; /* 16px */
     line-height: 1.625rem;
 }
 
@@ -161,7 +161,7 @@ p {
     }
 
     p {
-        font-size: 1.125rem; /* 18px */
+        font-size: 1.5rem; /* 18px */
         line-height: 1.75rem;
     }
 }
