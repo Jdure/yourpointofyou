@@ -69,12 +69,10 @@
         </div>
     </section>
 
-    <section class="flex flex-1 relative min-h-screen px-6">
-        <div class="h-screen w-screen flex flex-col justify-between gap-4">
+    <section class="min-h-screen min-w-screen">
+        <div class="wrapper">
             {{ range .Site.Data.pages }}
-            <div
-                class="card relative h-full min-w-fit py-16 rounded-lg overflow-hidden"
-            >
+            <div class="card h-full w-[95%] overflow-hidden">
                 <div
                     class="card__content text-white text-center cursor-pointer"
                 >
@@ -90,13 +88,17 @@
                         <div
                             class="card__front absolute inset-0 flex items-center justify-center is-visible"
                         >
-                            <h2 class="text-4xl uppercase">{{ .title }}</h2>
+                            <h2 class="text-2xl sm:text-4xl uppercase">
+                                {{ .title }}
+                            </h2>
                         </div>
 
                         <div
                             class="card__back absolute inset-0 flex flex-col items-center justify-center is-hidden"
                         >
-                            <p class="text-2xl pb-4">{{ .description }}</p>
+                            <p class="text-xl sm:text-2xl pb-4">
+                                {{ .description }}
+                            </p>
                             <a
                                 href="{{ .link }}"
                                 role="button"
@@ -121,7 +123,6 @@
                     </div>
                 </div>
             </div>
-
             {{ end }}
         </div>
     </section>
