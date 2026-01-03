@@ -1,4 +1,7 @@
+body,
 html {
+    overscroll-behavior-y: none;
+    /* or */
     overscroll-behavior: none;
 }
 
@@ -10,20 +13,55 @@ body {
 body,
 p,
 span {
-    font-family: "Gowun Dodum", sans-serif;
-    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1 1000;
     font-style: normal;
-    src: url("/static/fonts/GowunDodum-RegularAbout.ttf");
+    src: url("/static/fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: "Cormorant Unicase", serif;
+    font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
-    src: url("/static/fonts/CormorantUnicase-Regular.ttf");
+    src: url("/static/fonts/AbrilFatface-Regular.ttf");
+}
+
+/* Global heading sizes */
+h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem;
+}
+
+h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem;
+}
+
+/* Global paragraph size */
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.625rem;
+}
+
+#background_img {
+    position: sticky;
+    inset: 0px;
+    width: 100%;
+    height: 95%;
 }
 
 .quote {
@@ -33,7 +71,7 @@ h4 {
 .wrapper_quote {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    height: 100vh;
+    height: 80vh;
 }
 
 .wrapper_services {
@@ -180,7 +218,7 @@ h4 {
     .wrapper_quote {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         height: 50vh;
-        align-content: center;
+        align-content: start;
         width: 100%;
         padding-left: 5rem; /* Increase horizontal padding */
         padding-right: 5rem;
@@ -198,8 +236,61 @@ h4 {
     }
 }
 
+@media (min-width: 1536px) {
+    .wrapper_quote {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        height: 40vh;
+        align-content: start;
+        width: 100%;
+        padding-left: 8rem; /* Increase horizontal padding */
+        padding-right: 8rem;
+    }
+}
+
 @media (min-width: 640px) {
     .quote {
         align-self: center;
+    }
+
+    h1 {
+        font-size: 3rem; /* 48px */
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem;
+    }
+
+    p {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Responsive heading sizes for large screens */
+    h1 {
+        font-size: 3.75rem; /* 60px */
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 3rem; /* 48px */
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem;
+    }
+    p {
+        font-size: 1.25rem; /* 18px */
+        line-height: 1.75rem;
     }
 }
