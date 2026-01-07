@@ -3,8 +3,8 @@
 # https://blowfish.page/docs/getting-started/
 
 # title = "Your Point of You"
-theme = "blowfish" 
-baseURL = "https://yourpointofyou.ca/"
+theme = "blowfish"
+baseURL = "https://jdure.github.io/yourpointofyou/"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
@@ -68,3 +68,7 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[caches]
+    [caches.images]
+      dir = ':cacheDir/images'
