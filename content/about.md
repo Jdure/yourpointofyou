@@ -7,8 +7,6 @@ showHero = true
 heroStyle = 'big'
 +++
 
-# About Me
-
 Hi, I am Willyne a photographer and content creator. I have a passion for capturing moments and telling stories through my lens. 
 
 ## Life Through My Lens
