@@ -143,11 +143,6 @@ body > .min-h-\[148px\] {
 }
 
 @media (min-width: 640px) {
-    #quote {
-        font-size: 1.5rem; /* 20px */
-        line-height: 1.75rem;
-    }
-
     h1 {
         font-size: 3rem; /* 48px */
         line-height: 1.2;

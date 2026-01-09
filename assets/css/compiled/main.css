@@ -354,6 +354,9 @@
   .order-first {
     order: -9999;
   }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .float-left {
     float: left;
   }
@@ -2873,6 +2876,16 @@
       grid-column-start: 2;
     }
   }
+  .sm\:col-end-3 {
+    @media (width >= 640px) {
+      grid-column-end: 3;
+    }
+  }
+  .sm\:col-end-4 {
+    @media (width >= 640px) {
+      grid-column-end: 4;
+    }
+  }
   .sm\:me-7 {
     @media (width >= 640px) {
       margin-inline-end: calc(var(--spacing) * 7);
@@ -2913,6 +2926,16 @@
       width: calc(2/3 * 100%);
     }
   }
+  .sm\:w-3\/4 {
+    @media (width >= 640px) {
+      width: calc(3/4 * 100%);
+    }
+  }
+  .sm\:w-4\/5 {
+    @media (width >= 640px) {
+      width: calc(4/5 * 100%);
+    }
+  }
   .sm\:w-48 {
     @media (width >= 640px) {
       width: calc(var(--spacing) * 48);
@@ -2931,6 +2954,11 @@
   .sm\:grid-cols-3 {
     @media (width >= 640px) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .sm\:grid-cols-4 {
+    @media (width >= 640px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .sm\:flex-row {
@@ -2961,6 +2989,16 @@
   .sm\:self-end {
     @media (width >= 640px) {
       align-self: flex-end;
+    }
+  }
+  .sm\:self-start {
+    @media (width >= 640px) {
+      align-self: flex-start;
+    }
+  }
+  .sm\:justify-self-center {
+    @media (width >= 640px) {
+      justify-self: center;
     }
   }
   .sm\:overflow-hidden {
@@ -3022,6 +3060,18 @@
     @media (width >= 640px) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .sm\:text-sm {
+    @media (width >= 640px) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 640px) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .sm\:font-light {
