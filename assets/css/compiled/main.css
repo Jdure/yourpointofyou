@@ -1121,6 +1121,12 @@
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-2\/3 {
+    height: calc(2/3 * 100%);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -2896,6 +2902,11 @@
       aspect-ratio: 4/5;
     }
   }
+  .sm\:h-8\/10 {
+    @media (width >= 640px) {
+      height: calc(8/10 * 100%);
+    }
+  }
   .sm\:h-full {
     @media (width >= 640px) {
       height: 100%;
@@ -2964,6 +2975,11 @@
   .sm\:overflow-hidden {
     @media (width >= 640px) {
       overflow: hidden;
+    }
+  }
+  .sm\:rounded-full {
+    @media (width >= 640px) {
+      border-radius: calc(infinity * 1px);
     }
   }
   .sm\:p-6 {
