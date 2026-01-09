@@ -1,24 +1,24 @@
 [
   {
     "id": "about",
-    "title": "About",
-    "description": "Learn more about my journey, style, and passion for photography",
+    "title": "About Me",
+    "description": "The story behind the lens and why presence, intention, and care guide everything I create",
     "image": "https://picsum.photos/id/319/600/400",
     "link": "/about/"
   },
 
   {
-    "id": "services",
-    "title": "Services",
-    "description": "Explore professional photography services tailored to your needs",
+    "id": "experience",
+    "title": "The Experience",
+    "description": "A thoughtful, guided experience designed to let real moments unfold naturally",
     "image": "https://picsum.photos/id/531/600/400",
-    "link": "/services/"
+    "link": "/experience/"
   },
   {
-    "id": "process",
-    "title": "Procces and FAQ",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam aliquet",
+    "id": "investments",
+    "title": "Your Investments",
+    "description": "Curated photography offerings focused on quality, connection, and meaningful storytelling",
     "image": "https://picsum.photos/id/668/600/400",
-    "link": "/process/"
+    "link": "/investments/"
   }
 ]
