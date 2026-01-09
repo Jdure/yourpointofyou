@@ -4,9 +4,8 @@ draft = true
 title = 'About'
 featured_image = '/images/background.png'
 showHero = true
-heroStyle = 'big'
+heroStyle = 'big' 
 +++
-
 Hi, I am Willyne a photographer and content creator. I have a passion for capturing moments and telling stories through my lens. 
 
 ## Life Through My Lens
