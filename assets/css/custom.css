@@ -1,13 +1,8 @@
-body,
-html {
-    overscroll-behavior-y: none;
-    /* or */
-    overscroll-behavior: none;
-}
-
-body {
-    padding-left: 0;
-    padding-right: 0;
+body:has(#homepage-content) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-height: 100vh;
+    max-width: 1536px;
 }
 
 body,
@@ -30,8 +25,8 @@ h4 {
     font-style: normal;
 }
 
-footer {
-    visibility: hidden;
+footer > div > p {
+    font-size: 0.75rem;
 }
 
 /* Global heading sizes */
