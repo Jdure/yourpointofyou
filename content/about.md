@@ -13,11 +13,15 @@ Photography began as my way of holding onto moments—soft, fleeting, easy to mi
 
 The presence, the energy, the quiet details that linger. This is how moments stay alive.
 
+![about image](https://placehold.co/1200x400 "first-about-image")
+
 ### Seeing With Intention
 
 I'm a people watcher by nature. Photography taught me to truly see—the subtle expressions, quiet interactions, and genuine connections that exist when people feel understood. In a culture that rushes to capture, I believe moments deserve care. My work creates space for real people and real moments to unfold, documenting them with intention so they hold depth and emotional truth.
 
 Ironically, I've worn glasses since I was three. Maybe that's why seeing became more than clarity; it became intention, focus, and choice.
+
+![about image](https://placehold.co/1200x400 "second-about-image")
 
 ### My Purpose
 
