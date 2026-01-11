@@ -1117,12 +1117,9 @@
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
-<<<<<<< HEAD
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
-=======
->>>>>>> about
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -1790,6 +1787,9 @@
       background-color: color-mix(in oklab, rgba(var(--color-neutral-100), 1) 75%, transparent);
     }
   }
+  .bg-neutral-200 {
+    background-color: rgba(var(--color-neutral-200), 1);
+  }
   .bg-neutral-300 {
     background-color: rgba(var(--color-neutral-300), 1);
   }
@@ -2325,6 +2325,10 @@
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-sm {
@@ -3014,12 +3018,6 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
-  .sm\:text-3xl {
-    @media (width >= 640px) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
   .sm\:text-lg {
     @media (width >= 640px) {
       font-size: var(--text-lg);
@@ -3102,11 +3100,6 @@
   .md\:w-auto {
     @media (width >= 853px) {
       width: auto;
-    }
-  }
-  .md\:w-screen {
-    @media (width >= 853px) {
-      width: 100vw;
     }
   }
   .md\:grid-cols-3 {
@@ -3524,6 +3517,11 @@
       }
     }
   }
+  .dark\:bg-neutral-900 {
+    &:is(.dark *) {
+      background-color: rgba(var(--color-neutral-900), 1);
+    }
+  }
   .dark\:bg-neutral-900\/50 {
     &:is(.dark *) {
       background-color: color-mix(in srgb, rgba(rgba(var(--color-neutral-900), 1), 1) 50%, transparent);
@@ -3733,26 +3731,6 @@
   .print\:hidden {
     @media print {
       display: none;
-    }
-  }
-  .\[\&\>svg\]\:h-6 {
-    &>svg {
-      height: calc(var(--spacing) * 6);
-    }
-  }
-  .\[\&\>svg\]\:h-12 {
-    &>svg {
-      height: calc(var(--spacing) * 12);
-    }
-  }
-  .\[\&\>svg\]\:w-6 {
-    &>svg {
-      width: calc(var(--spacing) * 6);
-    }
-  }
-  .\[\&\>svg\]\:w-12 {
-    &>svg {
-      width: calc(var(--spacing) * 12);
     }
   }
 }
