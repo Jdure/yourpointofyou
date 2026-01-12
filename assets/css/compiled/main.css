@@ -913,6 +913,9 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
+  .mt-1\.5 {
+    margin-top: calc(var(--spacing) * 1.5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -942,6 +945,9 @@
   }
   .mt-\[0\.5rem\] {
     margin-top: 0.5rem;
+  }
+  .mt-auto {
+    margin-top: auto;
   }
   .-mr-\[100\%\] {
     margin-right: calc(100% * -1);
@@ -1117,9 +1123,6 @@
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -1161,6 +1164,9 @@
   }
   .h-\[150px\] {
     height: 150px;
+  }
+  .h-\[350px\] {
+    height: 350px;
   }
   .h-\[800px\] {
     height: 800px;
@@ -1430,6 +1436,9 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .grid-rows-\[auto_1fr_auto\] {
+    grid-template-rows: auto 1fr auto;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -1451,11 +1460,20 @@
   .items-start {
     align-items: flex-start;
   }
+  .items-stretch {
+    align-items: stretch;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .justify-items-center {
     justify-items: center;
@@ -1465,6 +1483,9 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -1535,6 +1556,9 @@
   }
   .self-center {
     align-self: center;
+  }
+  .self-end {
+    align-self: flex-end;
   }
   .self-start {
     align-self: flex-start;
@@ -1771,9 +1795,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, rgba(var(--color-neutral-100), 1) 75%, transparent);
     }
-  }
-  .bg-neutral-200 {
-    background-color: rgba(var(--color-neutral-200), 1);
   }
   .bg-neutral-300 {
     background-color: rgba(var(--color-neutral-300), 1);
@@ -2148,6 +2169,9 @@
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
   }
+  .text-pretty {
+    text-wrap: pretty;
+  }
   .text-wrap {
     text-wrap: wrap;
   }
@@ -2167,11 +2191,20 @@
   .\!text-neutral {
     color: rgba(var(--color-neutral), 1) !important;
   }
+  .text-gray-500 {
+    color: oklch(55.1% 0.027 264.364);
+  }
+  .text-gray-900 {
+    color: oklch(21% 0.034 264.665);
+  }
   .text-inherit {
     color: inherit;
   }
   .text-neutral-50 {
     color: rgba(var(--color-neutral-50), 1);
+  }
+  .text-neutral-100 {
+    color: rgba(var(--color-neutral-100), 1);
   }
   .text-neutral-200 {
     color: rgba(var(--color-neutral-200), 1);
@@ -2469,6 +2502,20 @@
   .group-open\:rotate-0 {
     &:is(:where(.group):is([open], :popover-open, :open) *) {
       rotate: 0deg;
+    }
+  }
+  .group-hover\:underline {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .group-hover\:underline-offset-4 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        text-underline-offset: 4px;
+      }
     }
   }
   .group-hover\:opacity-100 {
@@ -2877,6 +2924,11 @@
       height: calc(8/10 * 100%);
     }
   }
+  .sm\:h-\[450px\] {
+    @media (width >= 640px) {
+      height: 450px;
+    }
+  }
   .sm\:h-full {
     @media (width >= 640px) {
       height: 100%;
@@ -3087,9 +3139,9 @@
       width: auto;
     }
   }
-  .md\:w-full {
+  .md\:grid-cols-2 {
     @media (width >= 853px) {
-      width: 100%;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-3 {
@@ -3267,6 +3319,16 @@
   .lg\:grid-cols-2 {
     @media (width >= 1024px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 1024px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
