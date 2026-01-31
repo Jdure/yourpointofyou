@@ -1,31 +1,51 @@
 {{ define "main" }}
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    {{ range .Site.Data.prices }}
-    <a href="#" class="group block">
-        <img
-            src="https://placehold.co/400"
-            alt=""
-            class="h-[350px] w-full object-cover sm:h-[450px]"
-        />
+<h2>Investments</h2>
+<p class="capitalize">find the service that is right for you</p>
+<!--TODO:
+1-Ask for each page:
 
-        <div class="mt-3 grid grid-cols-1 grid-rows-[auto_1fr_auto] text-sm">
-            <h3
-                class="text-lg group-hover:underline group-hover:underline-offset-4"
-            >
-                {{ .name }}
-            </h3>
+What is the primary action? (read, subscribe, contact, download)
+
+What should users understand in 5 seconds?
+
+Tips
+
+Add a short “value statement” at the top of important pages
+
+Avoid long intros—lead with the takeaway
+
+Use one primary CTA per page
+
+-->
+
+<div class="grid grid-cols-1 gap-2">
+    {{ range .Site.Data.prices }}
+
+    <!--TODO:
+
+    1. Create a card container
+    2. Card Container has two collumns
+    2.1 First collumn contains a background image
+    2.2 Second collumn contains description of investments
+    3. Show each investment one by one
+    4. investments are toggle through dots or bottom bottons
+
+    -->
+
+    <div class="grid grid-cols-2 gap-2">
+        <div
+            class="bg-[url('https://placehold.co/400')] bg-cover h-64 bg-center bg-no-repeat"
+        ></div>
+        <div class="grid grid-cols-1 items-center text-justify">
+            <h3 class="text-lg text-center">{{ .name }}</h3>
             <p class="text-xs text-pretty">{{ .description }}</p>
-            <!--<div class="flex flex-row">
-                <p class="text-xs text-pretty">
-                    Duration: {{ .duration_hours }}
-                </p>
-                <p class="text-xs text-pretty">
-                    Edited Images: {{ .edited_images }}
-                </p>
-            </div>-->
-            <p>{{ .price }}</p>
+            <div class="flex flex-row justify-evenly">
+                <p class="text-xs text-pretty">{{ .price }}</p>
+                <p class="text-xs text-pretty">{{ .duration_hours }}</p>
+                <p class="text-xs text-pretty">{{ .edited_images }} images</p>
+            </div>
         </div>
-    </a>
+    </div>
     {{ end }}
 </div>
 {{ end }}
