@@ -3,59 +3,60 @@
     "name": "Signature Portrait",
     "price": "300$",
     "duration_hours": "2 hours",
-    "edited_images": 30,
-    "description": "A personal, intentional session focused on capturing you as you are. Clean, refined imagery shaped with care and attention through my point of view."
+    "edited_images": "30 images",
+    "description": "A personal, intentional session focused on capturing you as you are"
   },
   {
     "name": "Couples & Engagement",
     "price": "300$",
     "duration_hours": "2 hours",
-    "edited_images": 30,
-    "description": "An experience centered on connection, presence, and shared moments, allowing your relationship to unfold naturally."
+    "edited_images": "30 images",
+    "description": "An experience centered on your relationship, chemistry, and beautiful moments"
   },
   {
     "name": "Maternity",
     "price": "300$",
     "duration_hours": "2 hours",
-    "edited_images": 30,
-    "description": "An intimate session created for expecting parents, honoring this experience with intention and care.",
+    "edited_images": "30 images",
+    "description": "An intimate session for expecting parents delivered with intention and care",
     "notes": "Additional individuals may join for an added fee."
   },
   {
     "name": "Newborn",
     "price": "300$",
     "duration_hours": "2 hours",
-    "edited_images": 30,
-    "description": "A calm, thoughtful session focused on parents and immediate family (children and pets), capturing the tenderness of early moments.",
+    "edited_images": "30 images",
+    "description": "A thoughtful session focused on the early moments with family (incl. children and pets)",
     "notes": "Extended family welcome for an added fee."
   },
   {
     "name": "Family",
     "price": "400$",
     "duration_hours": "2 hours",
-    "edited_images": 30,
-    "description": "A storytelling session designed to preserve connection and togetherness for immediate family.",
+    "edited_images": "30 images",
+    "description": "A storytelling session designed to highlight family connection and togetherness",
     "notes": "Extended family welcome for an added fee."
   },
   {
     "name": "Professional & Personal Branding",
     "price": "400$",
     "duration_hours": "2 hours",
-    "edited_images": 20,
-    "description": "Intentional imagery for individuals and brands seeking photographs that feel authentic, aligned, and human.",
+    "edited_images": "20 images",
+    "description": "Sessions designed for individuals and brands seeking authentic and professional photos",
     "options": [
       {
         "name": "Headshots Only",
         "price": "200$$",
         "duration_hours": "1 hour",
-        "edited_images": 10
+        "edited_images": "10 images"
       }
     ]
   },
   {
     "name": "Custom Events",
     "price": "Varies",
-    "description": "Baby showers, birthdays, corporate gatherings, holidays, and milestone celebrations.",
-    "requirements": "An in-person or online consultation is required to ensure the experience reflects what matters most to you."
+    "description": "Baby showers, birthdays, corporate gatherings, holidays, and milestone celebrations",
+    "requirements": "An in-person or online consultation is required to ensure the experience reflects what matters most to you.",
+    "edited_images": "varies"
   }
 ]
