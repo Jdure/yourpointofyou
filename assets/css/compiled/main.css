@@ -1120,9 +1120,6 @@
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -1823,9 +1820,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, rgba(var(--color-neutral-100), 1) 75%, transparent);
     }
-  }
-  .bg-neutral-200 {
-    background-color: rgba(var(--color-neutral-200), 1);
   }
   .bg-neutral-300 {
     background-color: rgba(var(--color-neutral-300), 1);

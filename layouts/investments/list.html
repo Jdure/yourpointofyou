@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+<header id="single_header" class="mt-5 max-w-prose">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Investments
+    </h1>
+    <p class="capitalize">Tailored to your imagination</p>
+    <div
+        class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden"
+    >
+        <div class="flex flex-row flex-wrap items-center"></div>
+    </div>
+</header>
+<section class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 md:grid-cols-3">
+    {{ range .Site.Data.prices }}
+    <div class="group relative">
+        <div
+            class="bg-[url('https://placehold.co/400x600')] bg-cover h-144 bg-center bg-no-repeat"
+        >
+            <h3
+                class="absolute inset-x-0 bottom-10 text-lg text-center group-hover:opacity-0 transition duration-150 ease-out"
+            >
+                {{ .name }}
+            </h3>
+        </div>
+        <div
+            class="absolute inset-0 opacity-0 invisible h-0 group-hover:visible group-hover:opacity-100 group-hover:h-full bg-black/75 transition duration-500 ease-in-out grid grid-cols-1 items-center text-center"
+        >
+            <h3 class="text-lg text-center">{{ .name }}</h3>
+            <p class="text-xs text-pretty sm:text-balance">
+                {{ .description }}
+            </p>
+            <div class="flex flex-row justify-evenly">
+                <p class="text-xs text-pretty">{{ .price }}</p>
+                <p class="text-xs text-pretty">{{ .duration_hours }}</p>
+                <p class="text-xs text-pretty capitalize">
+                    {{ .edited_images }}
+                </p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</section>
+{{ end }}
