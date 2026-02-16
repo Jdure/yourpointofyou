@@ -18,13 +18,13 @@
             class="bg-[url('https://placehold.co/400x600')] bg-cover h-144 bg-center bg-no-repeat"
         >
             <h3
-                class="absolute inset-x-0 bottom-10 text-lg text-center group-hover:opacity-0 transition duration-150 ease-out"
+                class="absolute inset-x-0 bottom-10 text-lg text-center lg:group-hover:opacity-0 group-active:opacity-0 transition duration-150 ease-out"
             >
                 {{ .name }}
             </h3>
         </div>
         <div
-            class="absolute inset-0 opacity-0 invisible h-0 group-hover:visible group-hover:opacity-100 group-hover:h-full bg-black/75 transition duration-500 ease-in-out grid grid-cols-1 items-center text-center"
+            class="absolute inset-0 opacity-0 invisible h-0 group-active:visible group-active:opacity-100 group-active:h-full lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:h-full bg-black/75 transition duration-500 ease-in-out grid grid-cols-1 items-center text-center"
         >
             <h3 class="text-lg text-center">{{ .name }}</h3>
             <p class="text-xs text-pretty sm:text-balance">
@@ -41,4 +41,17 @@
     </div>
     {{ end }}
 </section>
+<script>
+    /*
+TODO:
+1. Add on click event to card divs
+  - Listen to on click
+  - Add classlist when clicked
+  - transition should end same as hover
+2. Onclick should only be applied on mobile devices (phones and tablets)
+  - check whether user is using mobile phone or tablet to activate on click
+  - use window.matchMedia to check for mobile devices
+*/
+    const isMobile = window.matchMedia("(max-width: 1024px").matches;
+</script>
 {{ end }}
