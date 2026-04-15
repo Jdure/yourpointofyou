@@ -179,4 +179,25 @@ body > .min-h-\[148px\] {
         font-size: 1.25rem; /* 18px */
         line-height: 1.75rem;
     }
+
+    .overlay-item:hover .overlay-title {
+        opacity: 0;
+    }
+  
+    .overlay-item:hover .overlay-content {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+}
+
+/* Mobile: use JavaScript-toggled class */
+.overlay-item.overlay-active .overlay-title {
+  opacity: 0;
+}
+
+.overlay-item.overlay-active .overlay-content {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
